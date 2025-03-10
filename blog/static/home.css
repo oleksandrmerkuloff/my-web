@@ -1,0 +1,55 @@
+.subhead {
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+
+/*Post style*/
+
+.post-container {
+    padding: 0 15px 15px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.post-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #4d0c22;
+}
+
+.post-link:hover {
+    color: #c44970;
+}
+
+.post-tags {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.single-tag {
+    color: #F5ECD5;
+    background-color: #941a43;
+    border: 1px solid #c44970;
+    border-radius: 15%;
+    padding: 3px;
+}
+
+.post-date {
+    font-weight: 500;
+    color: #4d0c22;
+    float: right;
+}
+
+.post-sep {
+    margin: 15px auto;
+    width: 70%;
+}

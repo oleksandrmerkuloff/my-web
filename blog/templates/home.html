@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static "home.css" %}">
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h2 class="subhead">About Me</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate praesentium odit iusto, inventore error vero sit debitis ipsam architecto quod aliquam dolor mollitia id. Necessitatibus temporibus repellat qui neque?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aperiam sed expedita nulla! Cum molestiae deleniti voluptatem dolor beatae ab exercitationem explicabo voluptas quo pariatur, doloribus excepturi. Dolor, architecto eligendi!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aperiam sed expedita nulla! Cum molestiae deleniti voluptatem dolor beatae ab exercitationem explicabo voluptas quo pariatur, doloribus excepturi. Dolor, architecto eligendi!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aperiam sed expedita nulla! Cum molestiae deleniti voluptatem dolor beatae ab exercitationem explicabo voluptas quo pariatur, doloribus excepturi. Dolor, architecto eligendi!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aperiam sed expedita nulla! Cum molestiae deleniti voluptatem dolor beatae ab exercitationem explicabo voluptas quo pariatur, doloribus excepturi. Dolor, architecto eligendi!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quaerat tenetur assumenda reprehenderit harum dignissimos unde dolor, natus deleniti molestias aut, repudiandae exercitationem eius id dicta error? Id, magnam provident.</p>
+
+<h2 class="subhead">Recent posts</h2>
+
+{% for _ in '1231231230' %}
+    {% include 'includes/post-card.html' %}
+    <hr class="post-sep">
+{% endfor %}
+
+{% endblock %}
