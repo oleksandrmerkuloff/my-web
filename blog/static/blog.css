@@ -1,0 +1,57 @@
+#container {
+    display: flex;
+}
+
+.subhead {
+    font-weight: 500;
+    margin: 20px;
+}
+
+#blog-side {
+    width: 70%;
+    border-right: 1px solid black;
+    padding: 30px 0;
+}
+
+#filters-side {
+    width: 30%;
+    padding-top: 30px;
+}
+
+#search-form {
+    width: 70%;
+    margin: 15px auto;
+}
+
+#search-form input {
+    height: 25px;
+    width: 85%;
+}
+
+#search-form button {
+    scale: 1.2;
+}
+
+#tags-storage {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag-cell {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px;
+    color: #F5ECD5;
+    background-color: #941a43;
+    border: 1px solid #c44970;
+    border-radius: 5px;
+}
+
+.tag-cell:hover {
+    color: #3f3e3b;
+    background-color: #dbd6d8;
+}

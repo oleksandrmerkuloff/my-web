@@ -3,6 +3,7 @@
     margin: 0;
     font-family: "Inter", sans-serif;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 #web-head {
@@ -35,13 +36,8 @@
 }
 
 .menu-link:hover {
-    color: #c44970;
-}
-
-#main-container {
-    width: 60%;
-    padding: 30px 0;
-    margin: auto;
+    color: rgb(28, 82, 28);
+    text-decoration: underline;
 }
 
 #web-foot {

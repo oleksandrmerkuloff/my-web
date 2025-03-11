@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static "blog.css" %}">
+<link rel="stylesheet" href="{% static "card.css" %}">
+{% endblock %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+    <div id="container">
+        <div id="blog-side">
+            {% for post in posts %}
+                {% include "includes/post-card.html" %}
+                <hr class="post-sep">
+            {% endfor %}
+        </div>
+        <div id="filters-side">
+            <form action="" method="get" id="search-form">
+                <input type="text" name="searching_title" placeholder="Search post">
+                <button type="submit">🔍</button>
+            </form>
+            <h3 class="subhead">Browse by tag:</h3>
+            <div id="tags-storage">
+                {% for tag in tags %}
+                    <a href="" class="tag-cell">{{ tag }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

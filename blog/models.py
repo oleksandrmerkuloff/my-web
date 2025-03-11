@@ -15,9 +15,7 @@ class Post(models.Model):
     body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(blank=True)
-    tags = models.ForeignKey(Tag, related_name='posts',
-                             null=True,
-                             on_delete=models.SET_NULL)
+    tags = models.ManyToManyField(Tag, related_name='posts')
 
     def __str__(self):
         return self.title

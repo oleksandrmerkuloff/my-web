@@ -1,10 +1,9 @@
 <div class="post-container">
-    <h3 class="post-title"><a href="#1" class="post-link">Post Title</a></h4>
+    <h3 class="post-title"><a href="#1" class="post-link">{{ post.title }}</a> <span class="post-date">{{ post.created_at|date:"d M Y" }}</span></h4>
     <ul class="post-tags">
-        <li class="single-tag">Python</li>
-        <li class="single-tag">Pet Project</li>
-        <li class="single-tag">Tech</li>
+        {% for tag in post.tags.all %}
+        <li class="single-tag">{{ tag }}</li>
+        {% endfor %}
     </ul>
-    <p class="post-outline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aut iusto nisi eveniet dolor, fugit culpa tempore, possimus facilis expedita dicta, quae voluptas? Magnam quis veritatis dolores repellendus laboriosam perferendis!</p>
-    <p class="post-date">2001-11-16</p>
+    <p class="post-outline">{{ post.outline }}</p>
 </div>

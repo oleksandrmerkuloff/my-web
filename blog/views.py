@@ -6,11 +6,19 @@ from .models import Tag, Post, PostImages
 
 
 def index(request):
-    return render(request, 'home.html')
+    recent_posts = Post.objects.all()[:4]
+    return render(request, 'home.html', {'posts': recent_posts})
 
 
 def blog_view(request):
-    return HttpResponse('Blog page')
+    tags = Tag.objects.all()
+    posts = Post.objects.all()
+    return render(request, 'blog.html',
+                  {
+                    'tags': tags,
+                    'posts': posts
+                   }
+                  )
 
 
 def post_view(request, post_pk):

@@ -1,0 +1,53 @@
+.post-container {
+    padding: 0 15px 15px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.post-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #4d0c22;
+}
+
+.post-link:hover {
+    color: #97274a;
+    text-decoration: underline;
+}
+
+.post-tags {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.single-tag {
+    color: #F5ECD5;
+    background-color: #941a43;
+    border: 1px solid #c44970;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.post-outline {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.post-date {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.8;
+    margin: auto;
+}
+
+.post-sep {
+    margin: 15px auto;
+    width: 70%;
+}
