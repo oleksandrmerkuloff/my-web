@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static "single-post.css" %}">
+{% endblock %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{%block content %}
+    <div id="single-post-container">
+        <h1 id="post-title">{{ post.title }}</h1>
+        {% for i in "123123123" %}
+        <p id="post-body">{{ post.body }}</p>
+        {% endfor %}
+        <hr id="sep">
+        <p id="posted_date">Posted: {{ post.created_at|date:"d M Y" }}</p>
+    </div>
+{% endblock %}

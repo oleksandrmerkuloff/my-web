@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static "contacts.css" %}">
+{% endblock %}
+
+{% block title %}Contacts{% endblock %}
+
+{% block content %}
+    <div id="container">
+        <h2 id="contacts-head">Contact Me</h2>
+        <p id="contact-me-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dolorum dolor est voluptate id eum nulla mollitia! Aspernatur tempore, voluptatibus quod perferendis accusamus eos expedita, iusto dicta molestias, ipsam eaque?
+            <br>ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, repudiandae, suscipit impedit hic ab commodi officia corrupti neque ea, et deserunt! Cumque laboriosam molestias assumenda veniam libero repellendus sapiente eius.
+        </p>
+        <dl id="social-net">
+            <dt class="social-label"><img src="{% static "images/e-mail.png" %}" alt="email"  class="social-icon"> Email</dt>
+            <dd class="link-container"><a href="mailto:oleksandrmerkuloff@gmail.com" class="social-link">oleksandrmerkuloff@gmail.com</a></dd>
+
+            <dt class="social-label"><img src="{% static "images/instagram.png" %}" alt="instagram" class="social-icon"> Instagram</dt>
+            <dd class="link-container"><a href="https://www.instagram.com/oleksandrmerkulov_crystal1s" class="social-link">Oleksandr Merkulov</a></dd>
+
+            <dt class="social-label"><img src="{% static "images/telegram.png" %}" alt="telegram" class="social-icon"> Telegram</dt>
+            <dd class="link-container"><a href="https://t.me/oleksandr_merk" class="social-link">@oleksandr_merk</a></dd>
+
+            <dt class="social-label"><img src="{% static "images/threads.png" %}" alt="threads" class="social-icon"> Threads</dt>
+            <dd class="link-container"><a href="https://www.threads.net/@oleksandrmerkulov_crystal1s" class="social-link">@merkulov</a></dd>
+            
+            <dt class="social-label"><img src="{% static "images/linkedin.png" %}" alt="linkedin" class="social-icon"> LinkedIn</dt>
+            <dd class="link-container"><a href="https://www.linkedin.com/in/oleksandr-merkulov-65b36b309/" class="social-link">Oleksandr Merkulov</a></dd>
+        </dl>
+    </div>
+{% endblock %}

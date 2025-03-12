@@ -1,0 +1,18 @@
+#single-post-container {
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
+
+#post-title {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+#sep {
+    margin: 15px 0;
+}
+
+#posted_date {
+    float: right;
+}

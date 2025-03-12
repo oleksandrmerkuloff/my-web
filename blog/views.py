@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from django.views.generic import DetailView, ListView
 
 from .models import Tag, Post, PostImages
@@ -10,9 +9,15 @@ def index(request):
     return render(request, 'home.html', {'posts': recent_posts})
 
 
-def blog_view(request):
+def blog_view(request, tag=None):
+    if tag:
+        posts = Post.objects.filter(tags__name=tag)
+    elif 'searching_title' in request.GET:
+        title = request.GET.get('searching_title')
+        posts = Post.objects.filter(title__icontains=title)
+    else:
+        posts = Post.objects.all()
     tags = Tag.objects.all()
-    posts = Post.objects.all()
     return render(request, 'blog.html',
                   {
                     'tags': tags,
@@ -21,9 +26,10 @@ def blog_view(request):
                   )
 
 
-def post_view(request, post_pk):
-    return HttpResponse(f'Post: {post_pk}')
+def post_view(request, post_slug):
+    post = Post.objects.get(slug=post_slug)
+    return render(request, 'single-post.html', {'post': post})
 
 
 def contacts_view(request):
-    return HttpResponse("Contacts page")
+    return render(request, 'contacts_page.html')

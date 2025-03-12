@@ -24,8 +24,9 @@
             </form>
             <h3 class="subhead">Browse by tag:</h3>
             <div id="tags-storage">
+                <a href="{% url "my-blog" %}" class="tag-cell">All Posts</a>
                 {% for tag in tags %}
-                    <a href="" class="tag-cell">{{ tag }}</a>
+                    <a href="{% url "filtered-blog" tag.name %}" class="tag-cell">{{ tag }}</a>
                 {% endfor %}
             </div>
         </div>
