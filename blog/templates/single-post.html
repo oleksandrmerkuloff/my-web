@@ -12,7 +12,7 @@
     <div id="single-post-container">
         <h1 id="post-title">{{ post.title }}</h1>
         {% for i in "123123123" %}
-        <p id="post-body">{{ post.body }}</p>
+        <p id="post-body">{{ post.get_body_as_html | safe }}</p>
         {% endfor %}
         <hr id="sep">
         <p id="posted_date">Posted: {{ post.created_at|date:"d M Y" }}</p>
