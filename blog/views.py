@@ -12,11 +12,11 @@ def index(request):
 def blog_view(request, tag=None):
     if tag:
         posts = Post.objects.filter(tags__name=tag)
-    elif 'searching_title' in request.GET:
-        title = request.GET.get('searching_title')
-        posts = Post.objects.filter(title__icontains=title)
     else:
         posts = Post.objects.all()
+    if 'searching_title' in request.GET:
+        title = request.GET.get('searching_title')
+        posts = Post.objects.filter(title__icontains=title)
     tags = Tag.objects.all()
     return render(request, 'blog.html',
                   {

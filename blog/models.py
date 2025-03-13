@@ -31,3 +31,6 @@ class Post(models.Model):
 
     def get_body_as_html(self):
         return markdownify(self.body)
+
+    class Meta:
+        ordering = ['-created_at']
