@@ -48,11 +48,25 @@
     padding: 3px;
     color: #F5ECD5;
     background-color: #941a43;
-    border: 1px solid #c44970;
     border-radius: 5px;
 }
 
 .tag-cell:hover {
     color: #3f3e3b;
     background-color: #dbd6d8;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .tag-cell {
+        font-size: 12px;
+    }
+
+    #search-form input {
+        height: 20px;
+        width: 80%;
+    }
+    
+    #search-form button {
+        scale: 1;
+    }
 }

@@ -14,6 +14,7 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ['title', 'created_at']
     list_display_links = ['title',]
     list_filter = ['created_at',]
+    search_fields = ['title',]
 
     class Meta:
         js = ("markdownx/js/markdownx.js",)

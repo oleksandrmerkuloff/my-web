@@ -4,39 +4,44 @@
     font-family: "Inter", sans-serif;
     font-style: normal;
     box-sizing: border-box;
+    background-color: #f1f0eb;
+    color: #6D2323;
 }
 
 #web-head {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     height: 20%;
+    margin: auto;
     padding: 30px;
 }
 
 #hname {
-    margin-left: 18%;
+    width: max-content;
     font-weight: 500;
 }
 
 #menu-list {
     display: flex;
-    width: 20%;
-    justify-content: space-around;
     justify-self: flex-end;
-    font-size: 20px;
-    font-weight: 500;
     list-style: none;
-    margin-right: 22%;
+    margin-right: 2vw;
+}
+
+.menu-item {
+    margin: auto 1vh;
 }
 
 .menu-link {
     text-decoration: none;
-    color: #4d0c22;
+    color: #6D2323;
+    font-size: 2.8vh;
+    font-weight: 600;
 }
 
 .menu-link:hover {
-    color: rgb(28, 82, 28);
+    color: #A31D1D;
     text-decoration: underline;
 }
 

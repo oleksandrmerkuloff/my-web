@@ -12,6 +12,7 @@
 #contact-me-text {
     margin: 20px 0;
     font-size: 18px;
+    text-align: justify;
 }
 
 .social-label {
@@ -31,11 +32,23 @@
 }
 
 .social-link:hover {
-    color: rgb(240, 226, 222);
+    color: #F5ECD5;
     background-color: #97274a;
     text-decoration: underline;
 }
 
 .social-icon {
     height: 16px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #contact-me-text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #container {
+        width: 60%;
+    }
 }
