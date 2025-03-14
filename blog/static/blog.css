@@ -70,3 +70,21 @@
         scale: 1;
     }
 }
+
+@media (max-width: 480px) {
+    #container {
+        text-align: center;
+    }
+
+    #blog-side {
+        width: 100%;
+        border: none;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    #filters-side {
+        visibility: hidden;
+        max-width: 0;
+    }
+}

@@ -89,3 +89,29 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 480px) {
+    .post-container {
+        width: 90%;
+    }
+    
+    .post-title {
+        text-align: left;
+        margin-top: 15px;
+    }
+    
+    .post-date {
+        display: block;
+        margin-top: 2px;
+    }
+    
+    .post-tags {
+        visibility: hidden;
+        max-height: 0;
+    }
+    
+    .post-outline {
+        font-size: 14px;
+        margin: auto 0;
+    }
+}

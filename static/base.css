@@ -56,3 +56,21 @@
     color: rgb(31 41 55);
     opacity: 0.7;
 }
+
+@media (max-width: 480px) {
+    #web-head {
+        flex-direction: column;
+    }
+
+    #hname {
+        margin: auto;
+    }
+    
+    #menu-list {
+        margin: 2vh auto 0 auto;
+    }
+
+    .menu-link {
+        font-size: 1.5em;
+    }
+}

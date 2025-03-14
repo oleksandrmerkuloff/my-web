@@ -1,6 +1,6 @@
 #single-post-container {
     min-height: 80vh;
-    width: 50%;
+    width: 60%;
     margin: auto;
     padding: 5px;
 }
@@ -62,4 +62,16 @@
 
 #posted_date {
     float: right;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #single-post-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    #single-post-container {
+        width: 90%;
+    }
 }
